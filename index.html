@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Pemesanan Bakso</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Bakso Persatuan</h1>
+    <p>Pilih menu favoritmu, tambahkan ke keranjang, lalu pesan lewat WhatsApp!</p>
+  </header>
+
+  <section class="menu-container">
+    <div class="menu-item">
+      <img src="Bakso urat.jpg" alt="Bakso Urat">
+      <h3>Bakso Urat</h3>
+      <p>Bakso urat kenyal dan gurih</p>
+      <span>Rp13.000</span>
+      <button onclick="tambahKeKeranjang('Bakso Urat',13000)">Tambah</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="Bakso telur.jpg" alt="Bakso Telur">
+      <h3>Bakso Telur</h3>
+      <p>Bakso isi telur lezat</p>
+      <span>Rp13.000</span>
+      <button onclick="tambahKeKeranjang('Bakso Telur',13000)">Tambah</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="Bakso boom.jpg" alt="Bakso Boom">
+      <h3>Bakso Boom</h3>
+      <p>Bakso Boom yang berisi daging cincang yang pedas</p>
+      <span>Rp13.000</span>
+      <button onclick="tambahKeKeranjang('Bakso Keju',13000)">Tambah</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="Es teh.jpg" alt="Es Teh">
+      <h3>Es Teh</h3>
+      <p>Es Teh dengan kenikmatkan dan kesegaran di tenggorokan</p>
+      <span>Rp5.000</span>
+      <button onclick="tambahKeKeranjang('Es Teh',5000)">Tambah</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="Es jeruk.jpg" alt="Es Jeruk">
+      <h3>Es Jeruk</h3>
+      <p>Es Jeruk dengan kenikmatkan dan kesegaran di tenggorokan</p>
+      <span>Rp8.000</span>
+      <button onclick="tambahKeKeranjang('Es Jeruk',8000)">Tambah</button>
+    </div>
+  </section>
+
+  <section class="keranjang">
+    <h2>🛒 Keranjang Pesanan</h2>
+    <ul id="daftarKeranjang"></ul>
+    <p id="totalHarga">Total: Rp0</p>
+    <button class="wa-button" onclick="kirimPesanan()">Kirim Pesanan ke WhatsApp</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Bakso Persatuan</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
